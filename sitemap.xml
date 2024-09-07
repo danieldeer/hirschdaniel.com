@@ -2,20 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://hirschdaniel.com/</loc>
+    <lastmod>2024-09-07T10:26:37+02:00</lastmod>
+  </url><url>
+    <loc>https://hirschdaniel.com/posts/</loc>
+    <lastmod>2024-09-07T10:26:37+02:00</lastmod>
+  </url><url>
+    <loc>https://hirschdaniel.com/posts/vim-cheat-sheet/</loc>
+    <lastmod>2024-09-07T10:26:37+02:00</lastmod>
+  </url><url>
+    <loc>https://hirschdaniel.com/posts/second/</loc>
     <lastmod>2024-09-07T10:19:39+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/second/</loc>
-    <lastmod>2024-09-07T10:19:39+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-09-07T10:19:39+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/first/</loc>
+    <loc>https://hirschdaniel.com/posts/first/</loc>
     <lastmod>2024-09-01T10:48:07+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://hirschdaniel.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://hirschdaniel.com/tags/</loc>
   </url>
 </urlset>

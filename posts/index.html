@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Posts | HirschDaniel</title>
 <meta name="keywords" content="">
 <meta name="description" content="Posts - HirschDaniel">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="https://hirschdaniel.com/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://hirschdaniel.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hirschdaniel.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hirschdaniel.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hirschdaniel.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hirschdaniel.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="https://hirschdaniel.com/posts/index.xml">
+<link rel="alternate" hreflang="en" href="https://hirschdaniel.com/posts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -57,6 +57,32 @@
 
     </style>
 </noscript>
+  
+
+<meta property="og:title" content="Posts" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://hirschdaniel.com/posts/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content=""/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://hirschdaniel.com/posts/"
+    }
+  ]
+}
+</script>
 </head>
 
 <body class="list" id="top">
@@ -74,7 +100,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="HirschDaniel (Alt + H)">HirschDaniel</a>
+            <a href="https://hirschdaniel.com/" accesskey="h" title="HirschDaniel (Alt + H)">HirschDaniel</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -111,15 +137,30 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Vim Ctags Cheat Sheet
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>There are dozens of good vim cheat sheets online. Why do another one? This one is a cheat sheet tailored to my workflow for generating ctags. Let’s have a look.
+Generate ctags like this (replace js with whatever language files you want to ignore, if any. I don’t code javascript, but my projects contain tons of js files, so I exclude them):
+ctags -R -f ~/.ctags --exclude=&#39;*.js&#39; &lt;path-to-project&gt;
+If your project contains a language that is not supported by ctags, but is related to another familiar language, you can use langmap....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-07 10:26:37 +0200 CEST'>September 7, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Vim Ctags Cheat Sheet" href="https://hirschdaniel.com/posts/vim-cheat-sheet/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Hugo Cheat Sheet
     </h2>
   </header>
   <div class="entry-content">
     <p>Here’s a list of useful hugo commands I regularly use.
-# Build your hugo project hugo # Create a new content file hugo new &lt;path&gt; # Run the hugo development server hugo server Remember to set draft = false for content to be displayed.</p>
+# Build your hugo project hugo # Create a new content file hugo new &lt;path&gt; # For example: hugo new posts/hugo-cheat-sheet.md # Run the hugo development server hugo server Remember to set draft = false for content to be displayed.</p>
   </div>
   <footer class="entry-footer"><span title='2024-09-07 10:19:39 +0200 CEST'>September 7, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Hugo Cheat Sheet" href="http://localhost:1313/posts/second/"></a>
+  <a class="entry-link" aria-label="post link to Hugo Cheat Sheet" href="https://hirschdaniel.com/posts/second/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -132,12 +173,12 @@
 Back in school, I learned that a website is just HTML (for content) and CSS (for styling)....</p>
   </div>
   <footer class="entry-footer"><span title='2024-09-01 10:48:07 +0200 CEST'>September 1, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to I decided Wordpress is for freaks and dumped it" href="http://localhost:1313/posts/first/"></a>
+  <a class="entry-link" aria-label="post link to I decided Wordpress is for freaks and dumped it" href="https://hirschdaniel.com/posts/first/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">HirschDaniel</a></span> · 
+        <span>&copy; 2024 <a href="https://hirschdaniel.com/">HirschDaniel</a></span> · 
 
     <span>
         Powered by
