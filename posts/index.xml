@@ -6,8 +6,15 @@
     <description>Recent content in Posts on HirschDaniel</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Sep 2024 10:26:37 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 08 Sep 2024 14:42:37 +0200</lastBuildDate>
     <atom:link href="https://hirschdaniel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>After learning about Github pages, I will never pay for hosting again</title>
+      <link>https://hirschdaniel.com/posts/github-pages-saves-money/</link>
+      <pubDate>Sun, 08 Sep 2024 14:42:37 +0200</pubDate>
+      <guid>https://hirschdaniel.com/posts/github-pages-saves-money/</guid>
+      <description>Over the last 10 years, I published at least 20 different websites. Some of them went viral and reached tens of thousands of daily visitors. But most of them went under the radar. For small websites, I had a shared hosting plan. I paid 10$ for unlimited domains on a shared host. Performance was meh. But I had no complaints from the visitors I had. A couple of websites I moved to a dedicated cloud hosting provider, which provides me a powerful server to run wordpress on.</description>
+    </item>
     <item>
       <title>Vim Ctags Cheat Sheet</title>
       <link>https://hirschdaniel.com/posts/vim-cheat-sheet/</link>
