@@ -127,16 +127,12 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>Hi, I&rsquo;m Daniel 👋</h1>
-    </header>
-    <div class="entry-content">
-        Just another software engineer using his powers to create an online scratchboard for himself. You can reach me via <a href="mailto:contact@hirschdaniel.com">contact@hirschdaniel.com</a>
-    </div>
-    <footer class="entry-footer">
-        <div class="social-icons" >
+<main class="main"><div class="profile">
+    <div class="profile_inner">
+        <img draggable="false" src="https://hirschdaniel.com/profile/profile-pic-3.jpg" alt="Daniel Hirsch profile picture" title="Daniel Hirsch profile picture"
+            height="160" width="160" />
+        <h1>Hallo, ich bin Daniel Hirsch, Softwareentwickler 👋</h1>
+        <span>Ich stehe für saubere, performante Software, die intellektuelle Herausforderungen kreativ löst. Zu erreichen bin ich unter <a href="mailto:contact@hirschdaniel.com">contact@hirschdaniel.com</a></span><div class="social-icons" >
     <a href="https://www.linkedin.com/in/hirsch-daniel/" target="_blank" rel="noopener noreferrer me"
         title="LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -167,74 +163,16 @@
     </a>
 </div>
 
-    </footer>
-</article>
+        <div class="buttons">
+            <a class="button" href="/posts" rel="noopener" title="Zum Blog">
+                <span class="button-inner">
+                    Zum Blog
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Wie es geht: Java Crackme Dekompilieren und Keygen Programmieren
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Ich habe mir mal eine Java Crackme .jar heruntergeladen und geschaut was ich als sterblicher Java Entwickler so damit anfangen kann.
-Vor einigen Jahren habe ich mich mal ein paar Tage lang mit Reverse Engineering und den dazugehörigen Tools wie Ghidra beschäftigt. Auch sehr empfehlen kann ich das Buch Hacking: The Art of Exploitation welches bei jedem Interessierten sofort einen Funken zünden sollte. Für mich als C Unerfahrenen war selbst die Einleitung zur Assembly-Sprache schon harte Kost....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-10 11:54:47 +0200 CEST'>September 10, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Wie es geht: Java Crackme Dekompilieren und Keygen Programmieren" href="https://hirschdaniel.com/posts/java-crackme-dekompilieren-und-keygen-programmieren/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">After learning about Github pages, I will never pay for hosting again
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Over the last 10 years, I published at least 20 different websites. Some of them went viral and reached tens of thousands of daily visitors. But most of them went under the radar. For small websites, I had a shared hosting plan. I paid 10$ for unlimited domains on a shared host. Performance was meh. But I had no complaints from the visitors I had. A couple of websites I moved to a dedicated cloud hosting provider, which provides me a powerful server to run wordpress on....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-08 14:42:37 +0200 CEST'>September 8, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to After learning about Github pages, I will never pay for hosting again" href="https://hirschdaniel.com/posts/github-pages-saves-money/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Vim Ctags Cheat Sheet
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>There are dozens of good vim cheat sheets online. Why do another one? This one is a cheat sheet tailored to my workflow for generating ctags. Let’s have a look.
-Generate ctags like this (replace js with whatever language files you want to ignore, if any. I don’t code javascript, but my projects contain tons of js files, so I exclude them):
-ctags -R -f ~/.ctags --exclude=&#39;*.js&#39; &lt;path-to-project&gt;
-If your project contains a language that is not supported by ctags, but is related to another familiar language, you can use langmap....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-07 10:26:37 +0200 CEST'>September 7, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Vim Ctags Cheat Sheet" href="https://hirschdaniel.com/posts/vim-cheat-sheet/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Hugo Cheat Sheet
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Here’s a list of useful hugo commands I regularly use.
-# Build your hugo project hugo # Create a new content file hugo new &lt;path&gt; # For example: hugo new posts/hugo-cheat-sheet.md # Run the hugo development server hugo server Remember to set draft = false for content to be displayed.</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-07 10:19:39 +0200 CEST'>September 7, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Hugo Cheat Sheet" href="https://hirschdaniel.com/posts/second/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">I decided Wordpress is for freaks and dumped it
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I’ve been publishing wordpress websites for well over 10 years now. Wordpress was working well for me once I was familiar and knew a set of plugins to use. I knew exactly which caching, security, image compression, host, etc. to install to get things running smoothly. Somehow, this still doesn’t feel simple enough. No way every website is built like this.
-Back in school, I learned that a website is just HTML (for content) and CSS (for styling)....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-01 10:48:07 +0200 CEST'>September 1, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to I decided Wordpress is for freaks and dumped it" href="https://hirschdaniel.com/posts/first/"></a>
-</article>
     </main>
     
 <footer class="footer">
