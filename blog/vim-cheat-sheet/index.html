@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Vim Ctags Cheat Sheet | HirschDaniel</title>
+<meta name="keywords" content="">
+<meta name="description" content="There are dozens of good vim cheat sheets online. Why do another one? This one is a cheat sheet tailored to my workflow for generating ctags. Let&rsquo;s have a look.
+Generate ctags like this (replace js with whatever language files you want to ignore, if any. I don&rsquo;t code javascript, but my projects contain tons of js files, so I exclude them):
+ctags -R -f ~/.ctags --exclude=&#39;*.js&#39; &lt;path-to-project&gt;
+If your project contains a language that is not supported by ctags, but is related to another familiar language, you can use langmap.">
+<meta name="author" content="">
+<link rel="canonical" href="https://hirschdaniel.com/blog/vim-cheat-sheet/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://hirschdaniel.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hirschdaniel.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hirschdaniel.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hirschdaniel.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hirschdaniel.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://hirschdaniel.com/blog/vim-cheat-sheet/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+  
+
+<meta property="og:title" content="Vim Ctags Cheat Sheet" />
+<meta property="og:description" content="There are dozens of good vim cheat sheets online. Why do another one? This one is a cheat sheet tailored to my workflow for generating ctags. Let&rsquo;s have a look.
+Generate ctags like this (replace js with whatever language files you want to ignore, if any. I don&rsquo;t code javascript, but my projects contain tons of js files, so I exclude them):
+ctags -R -f ~/.ctags --exclude=&#39;*.js&#39; &lt;path-to-project&gt;
+If your project contains a language that is not supported by ctags, but is related to another familiar language, you can use langmap." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hirschdaniel.com/blog/vim-cheat-sheet/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-09-07T10:26:37+02:00" />
+<meta property="article:modified_time" content="2024-09-07T10:26:37+02:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vim Ctags Cheat Sheet"/>
+<meta name="twitter:description" content="There are dozens of good vim cheat sheets online. Why do another one? This one is a cheat sheet tailored to my workflow for generating ctags. Let&rsquo;s have a look.
+Generate ctags like this (replace js with whatever language files you want to ignore, if any. I don&rsquo;t code javascript, but my projects contain tons of js files, so I exclude them):
+ctags -R -f ~/.ctags --exclude=&#39;*.js&#39; &lt;path-to-project&gt;
+If your project contains a language that is not supported by ctags, but is related to another familiar language, you can use langmap."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://hirschdaniel.com/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Vim Ctags Cheat Sheet",
+      "item": "https://hirschdaniel.com/blog/vim-cheat-sheet/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Vim Ctags Cheat Sheet",
+  "name": "Vim Ctags Cheat Sheet",
+  "description": "There are dozens of good vim cheat sheets online. Why do another one? This one is a cheat sheet tailored to my workflow for generating ctags. Let\u0026rsquo;s have a look.\nGenerate ctags like this (replace js with whatever language files you want to ignore, if any. I don\u0026rsquo;t code javascript, but my projects contain tons of js files, so I exclude them):\nctags -R -f ~/.ctags --exclude='*.js' \u0026lt;path-to-project\u0026gt;\nIf your project contains a language that is not supported by ctags, but is related to another familiar language, you can use langmap.",
+  "keywords": [
+    
+  ],
+  "articleBody": "There are dozens of good vim cheat sheets online. Why do another one? This one is a cheat sheet tailored to my workflow for generating ctags. Let’s have a look.\nGenerate ctags like this (replace js with whatever language files you want to ignore, if any. I don’t code javascript, but my projects contain tons of js files, so I exclude them):\nctags -R -f ~/.ctags --exclude='*.js' If your project contains a language that is not supported by ctags, but is related to another familiar language, you can use langmap. In my example I map groovy files to java. Groovy is a superset of java, so this works: ctags -R -f ~/.ctags-groovy --exclude='*.js' --langmap=java:.groovy The result of these two commands are two ctags files. Reference them in your .vimrc and you’re set.\nAdd the following statements to ~/.vimrc.\nset tags=~/.ctags set tags+=~/.ctags-groovy refresh the .vimrc by opening it (vim ~/.vimrc) and executing the following command in vim: :so %\n",
+  "wordCount" : "161",
+  "inLanguage": "en",
+  "datePublished": "2024-09-07T10:26:37+02:00",
+  "dateModified": "2024-09-07T10:26:37+02:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hirschdaniel.com/blog/vim-cheat-sheet/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HirschDaniel",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hirschdaniel.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hirschdaniel.com/" accesskey="h" title="HirschDaniel (Alt + H)">HirschDaniel</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://hirschdaniel.com/de/" title="Deutsch"
+                            aria-label="Deutsch">De</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://hirschdaniel.com/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Vim Ctags Cheat Sheet
+    </h1>
+    <div class="post-meta"><span title='2024-09-07 10:26:37 +0200 CEST'>September 7, 2024</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>There are dozens of good vim cheat sheets online. Why do another one?
+This one is a cheat sheet tailored to my workflow for generating ctags. Let&rsquo;s have a look.</p>
+<p>Generate ctags like this (replace js with whatever language files you want to ignore, if any. I don&rsquo;t code javascript, but my projects contain tons of js files, so I exclude them):</p>
+<p><code>ctags -R -f ~/.ctags --exclude='*.js' &lt;path-to-project&gt;</code></p>
+<p>If your project contains a language that is not supported by ctags, but is related to another familiar language, you can use <code>langmap</code>. In my example I map groovy files to java. Groovy is a superset of java, so this works:
+<code>ctags -R -f ~/.ctags-groovy --exclude='*.js' --langmap=java:.groovy &lt;path-to-project&gt;</code></p>
+<p>The result of these two commands are two ctags files. Reference them in your <code>.vimrc</code> and you&rsquo;re set.</p>
+<p>Add the following statements to <code>~/.vimrc</code>.</p>
+<pre tabindex="0"><code>set tags=~/.ctags
+set tags+=~/.ctags-groovy
+</code></pre><p>refresh the <code>.vimrc</code> by opening it (<code>vim ~/.vimrc</code>) and executing the following command in vim:
+<code>:so %</code></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://hirschdaniel.com/blog/github-pages-saves-money/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>After learning about Github pages, I will never pay for hosting again</span>
+  </a>
+  <a class="next" href="https://hirschdaniel.com/blog/second/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Hugo Cheat Sheet</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://hirschdaniel.com/">HirschDaniel</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HirschDaniel</title>
+    <link>https://hirschdaniel.com/de/</link>
+    <description>Recent content on HirschDaniel</description>
+    <generator>Hugo -- 0.133.1</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Tue, 10 Sep 2024 11:54:47 +0200</lastBuildDate>
+    <atom:link href="https://hirschdaniel.com/de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wie es geht: Java Crackme Dekompilieren und Keygen Programmieren</title>
+      <link>https://hirschdaniel.com/de/blog/java-crackme-dekompilieren-und-keygen-programmieren/</link>
+      <pubDate>Tue, 10 Sep 2024 11:54:47 +0200</pubDate>
+      <guid>https://hirschdaniel.com/de/blog/java-crackme-dekompilieren-und-keygen-programmieren/</guid>
+      <description>Ich habe mir mal eine Java Crackme .jar heruntergeladen und geschaut was ich als sterblicher Java Entwickler so damit anfangen kann.
+Vor einigen Jahren habe ich mich mal ein paar Tage lang mit Reverse Engineering und den dazugehörigen Tools wie Ghidra beschäftigt. Auch sehr empfehlen kann ich das Buch Hacking: The Art of Exploitation welches bei jedem Interessierten sofort einen Funken zünden sollte. Für mich als C Unerfahrenen war selbst die Einleitung zur Assembly-Sprache schon harte Kost.</description>
+    </item>
+  </channel>
+</rss>
