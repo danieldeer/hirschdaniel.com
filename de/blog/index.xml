@@ -10,9 +10,9 @@
     <atom:link href="https://hirschdaniel.com/de/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wie es geht: Java Crackme Dekompilieren und Keygen Programmieren</title>
-      <link>https://hirschdaniel.com/de/blog/java-crackme-dekompilieren-und-keygen-programmieren/</link>
+      <link>https://hirschdaniel.com/de/blog/decompile-java-crackme-and-develop-keygen/</link>
       <pubDate>Tue, 10 Sep 2024 11:54:47 +0200</pubDate>
-      <guid>https://hirschdaniel.com/de/blog/java-crackme-dekompilieren-und-keygen-programmieren/</guid>
+      <guid>https://hirschdaniel.com/de/blog/decompile-java-crackme-and-develop-keygen/</guid>
       <description>Ich habe mir mal eine Java Crackme .jar heruntergeladen und geschaut was ich als sterblicher Java Entwickler so damit anfangen kann.
 Vor einigen Jahren habe ich mich mal ein paar Tage lang mit Reverse Engineering und den dazugehörigen Tools wie Ghidra beschäftigt. Auch sehr empfehlen kann ich das Buch Hacking: The Art of Exploitation welches bei jedem Interessierten sofort einen Funken zünden sollte. Für mich als C Unerfahrenen war selbst die Einleitung zur Assembly-Sprache schon harte Kost.</description>
     </item>
