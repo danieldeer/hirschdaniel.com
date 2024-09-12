@@ -64,5 +64,17 @@
                 hreflang="de-DE"
                 href="https://hirschdaniel.com/de/tags/"
                 />
+  </url><url>
+    <loc>https://hirschdaniel.com/de/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://hirschdaniel.com/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="https://hirschdaniel.com/de/about/"
+                />
   </url>
 </urlset>

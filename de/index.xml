@@ -16,5 +16,15 @@
       <description>Ich habe mir mal eine Java Crackme .jar heruntergeladen und geschaut was ich als sterblicher Java Entwickler so damit anfangen kann.
 Vor einigen Jahren habe ich mich mal ein paar Tage lang mit Reverse Engineering und den dazugehörigen Tools wie Ghidra beschäftigt. Auch sehr empfehlen kann ich das Buch Hacking: The Art of Exploitation welches bei jedem Interessierten sofort einen Funken zünden sollte. Für mich als C Unerfahrenen war selbst die Einleitung zur Assembly-Sprache schon harte Kost.</description>
     </item>
+    <item>
+      <title>Über</title>
+      <link>https://hirschdaniel.com/de/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hirschdaniel.com/de/about/</guid>
+      <description>Ich bin Daniel Hirsch. Als Softwareingenieur begeistert es mich, technische Probleme zu lösen und an komplexen Systemen zu arbeiten. Mein Fokus liegt darauf, Lösungen mit Qualität, Wartbarkeit und Robustheit bereitzustellen.
+Referenzen Ich habe die Ehre an vielen verschiedenen Projekten zu arbeiten, die von einfachen Wordpress-Setups und Inhaltserstellung bis hin zu komplexer Softwareentwicklung für die Luft- und Raumfahrt reichen.
+Bei jedem Projekt konnte ich mein bestehendes Wissen erweitern und einbringen.
+Zertifizierungen </description>
+    </item>
   </channel>
 </rss>

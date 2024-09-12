@@ -54,6 +54,16 @@
     <lastmod>2024-09-01T10:48:07+02:00</lastmod>
   </url><url>
     <loc>https://hirschdaniel.com/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="https://hirschdaniel.com/de/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://hirschdaniel.com/about/"
+                />
   </url><url>
     <loc>https://hirschdaniel.com/categories/</loc>
     <xhtml:link
