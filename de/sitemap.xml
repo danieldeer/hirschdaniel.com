@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/de/blog/</loc>
+    <loc>https://hirschdaniel.com/de/blog/</loc>
     <lastmod>2024-09-10T11:54:47+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/blog/"
+                href="https://hirschdaniel.com/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/blog/"
+                href="https://hirschdaniel.com/de/blog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/</loc>
+    <loc>https://hirschdaniel.com/de/</loc>
     <lastmod>2024-09-10T11:54:47+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/"
+                href="https://hirschdaniel.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/"
+                href="https://hirschdaniel.com/de/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/blog/decompile-java-crackme-and-develop-keygen/</loc>
+    <loc>https://hirschdaniel.com/de/blog/decompile-java-crackme-and-develop-keygen/</loc>
     <lastmod>2024-09-10T11:54:47+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/blog/decompile-java-crackme-and-develop-keygen/"
+                href="https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/blog/decompile-java-crackme-and-develop-keygen/"
+                href="https://hirschdaniel.com/de/blog/decompile-java-crackme-and-develop-keygen/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/categories/</loc>
+    <loc>https://hirschdaniel.com/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/categories/"
+                href="https://hirschdaniel.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/categories/"
+                href="https://hirschdaniel.com/de/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/tags/</loc>
+    <loc>https://hirschdaniel.com/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/tags/"
+                href="https://hirschdaniel.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/tags/"
+                href="https://hirschdaniel.com/de/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/about/</loc>
+    <loc>https://hirschdaniel.com/de/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/about/"
+                href="https://hirschdaniel.com/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/about/"
+                href="https://hirschdaniel.com/de/about/"
                 />
   </url>
 </urlset>

@@ -2,100 +2,100 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://hirschdaniel.com/</loc>
     <lastmod>2024-09-13T16:42:58+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/"
+                href="https://hirschdaniel.com/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/"
+                href="https://hirschdaniel.com/"
                 />
   </url><url>
-    <loc>http://localhost:1313/imprint/</loc>
+    <loc>https://hirschdaniel.com/imprint/</loc>
     <lastmod>2024-09-13T16:42:58+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/resources/</loc>
+    <loc>https://hirschdaniel.com/resources/</loc>
     <lastmod>2024-09-13T15:51:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/apache-kafka-introduction/</loc>
+    <loc>https://hirschdaniel.com/blog/apache-kafka-introduction/</loc>
     <lastmod>2024-09-13T13:29:49+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://hirschdaniel.com/blog/</loc>
     <lastmod>2024-09-13T13:29:49+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/blog/"
+                href="https://hirschdaniel.com/de/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/blog/"
+                href="https://hirschdaniel.com/blog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/decompile-java-crackme-and-develop-keygen/</loc>
+    <loc>https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/</loc>
     <lastmod>2024-09-11T12:13:47+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/blog/decompile-java-crackme-and-develop-keygen/"
+                href="https://hirschdaniel.com/de/blog/decompile-java-crackme-and-develop-keygen/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/blog/decompile-java-crackme-and-develop-keygen/"
+                href="https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/github-pages-saves-money/</loc>
+    <loc>https://hirschdaniel.com/blog/github-pages-saves-money/</loc>
     <lastmod>2024-09-08T14:42:37+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/vim-cheat-sheet/</loc>
+    <loc>https://hirschdaniel.com/blog/vim-cheat-sheet/</loc>
     <lastmod>2024-09-07T10:26:37+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/second/</loc>
+    <loc>https://hirschdaniel.com/blog/second/</loc>
     <lastmod>2024-09-07T10:19:39+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/first/</loc>
+    <loc>https://hirschdaniel.com/blog/first/</loc>
     <lastmod>2024-09-01T10:48:07+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://hirschdaniel.com/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/about/"
+                href="https://hirschdaniel.com/de/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/about/"
+                href="https://hirschdaniel.com/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://hirschdaniel.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/categories/"
+                href="https://hirschdaniel.com/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/categories/"
+                href="https://hirschdaniel.com/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://hirschdaniel.com/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/de/tags/"
+                href="https://hirschdaniel.com/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/tags/"
+                href="https://hirschdaniel.com/tags/"
                 />
   </url>
 </urlset>
