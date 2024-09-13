@@ -6,8 +6,16 @@
     <description>Recent content in Blog on HirschDaniel</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 11 Sep 2024 12:13:47 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 13 Sep 2024 13:29:49 +0200</lastBuildDate>
     <atom:link href="https://hirschdaniel.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Kafka Introduction (Architecture made easy)</title>
+      <link>https://hirschdaniel.com/blog/apache-kafka-introduction/</link>
+      <pubDate>Fri, 13 Sep 2024 13:29:49 +0200</pubDate>
+      <guid>https://hirschdaniel.com/blog/apache-kafka-introduction/</guid>
+      <description>In today’s world of distributed systems, data moves fast, and applications need to handle huge volumes of data in real time. Whether you&amp;rsquo;re building microservices, integrating external systems, or managing streaming data, ensuring smooth communication between data producers and consumers is crucial. This is where Apache Kafka comes in—a powerful event streaming platform that enables scalable and decoupled data exchange.
+A Beginner&amp;rsquo;s Guide to Apache Kafka: Event Streaming Made Easy I’m Daniel Hirsch, a software engineer based in Germany, and in this post, I’ll share insights from my exploration of Apache Kafka, helping you understand its core concepts and how it solves common problems in modern software architectures.</description>
+    </item>
     <item>
       <title>How to: Decompile Java Crackme and Develop a Keygen</title>
       <link>https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/</link>
