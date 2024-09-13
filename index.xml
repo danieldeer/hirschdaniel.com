@@ -6,8 +6,16 @@
     <description>Recent content on HirschDaniel</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 13 Sep 2024 13:29:49 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 13 Sep 2024 15:51:54 +0200</lastBuildDate>
     <atom:link href="https://hirschdaniel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resources</title>
+      <link>https://hirschdaniel.com/resources/</link>
+      <pubDate>Fri, 13 Sep 2024 15:51:54 +0200</pubDate>
+      <guid>https://hirschdaniel.com/resources/</guid>
+      <description>Table of contents for this page:
+Book Recommendations Slides and Cheat Sheets Book Recommendations I can&amp;rsquo;t stand the books &amp;ldquo;Clean Code&amp;rdquo;, &amp;ldquo;Effective Java&amp;rdquo;, and &amp;ldquo;Pragmatic Programmer&amp;rdquo;. And don&amp;rsquo;t even mention &amp;ldquo;The Phoenix Project&amp;rdquo;. They are incredibly overhyped. Everybody on LinkedIn is bragging when they make it through one of those, as if they just read the bible. Not me. I&amp;rsquo;ve read them all and can tell you: There are much better books out there.</description>
+    </item>
     <item>
       <title>Apache Kafka Introduction (Architecture made easy)</title>
       <link>https://hirschdaniel.com/blog/apache-kafka-introduction/</link>
