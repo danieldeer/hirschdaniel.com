@@ -6,8 +6,16 @@
     <description>Recent content on HirschDaniel</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 13 Sep 2024 16:42:58 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 14 Sep 2024 14:28:15 +0200</lastBuildDate>
     <atom:link href="https://hirschdaniel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Refactoring and Mavenizing an Open Source Java Bruteforcer</title>
+      <link>https://hirschdaniel.com/blog/refactoring-and-mavenizing-java-bruteforcer-project/</link>
+      <pubDate>Sat, 14 Sep 2024 14:28:15 +0200</pubDate>
+      <guid>https://hirschdaniel.com/blog/refactoring-and-mavenizing-java-bruteforcer-project/</guid>
+      <description>Today, I’m taking on a small yet significant project: cleaning up and improving one of my older repositories on GitHub. It’s a Java bruteforcer I coded about three years ago.
+I documented the whole process on YouTube. There, you can see me execute all the steps described below. Of course it can&amp;rsquo;t compete with popular bruteforcers such as hashcat, the password recovery tool that ships with Kali Linux. But it works well anyways.</description>
+    </item>
     <item>
       <title>Imprint</title>
       <link>https://hirschdaniel.com/imprint/</link>
