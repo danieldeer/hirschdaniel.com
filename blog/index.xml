@@ -9,7 +9,7 @@
     <lastBuildDate>Sat, 14 Sep 2024 14:28:15 +0200</lastBuildDate>
     <atom:link href="https://hirschdaniel.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Refactoring and Mavenizing an Open Source Java Bruteforcer</title>
+      <title>Refactoring and Mavenizing a Java Bruteforcing Library</title>
       <link>https://hirschdaniel.com/blog/refactoring-and-mavenizing-java-bruteforcer-project/</link>
       <pubDate>Sat, 14 Sep 2024 14:28:15 +0200</pubDate>
       <guid>https://hirschdaniel.com/blog/refactoring-and-mavenizing-java-bruteforcer-project/</guid>
@@ -17,7 +17,7 @@
 I documented the whole process on YouTube. There, you can see me execute all the steps described below. Of course it can&amp;rsquo;t compete with popular bruteforcers such as hashcat, the password recovery tool that ships with Kali Linux. But it works well anyways.</description>
     </item>
     <item>
-      <title>Apache Kafka Introduction (Architecture made easy)</title>
+      <title>Apache Kafka Introduction: Concepts and Terminology</title>
       <link>https://hirschdaniel.com/blog/apache-kafka-introduction/</link>
       <pubDate>Fri, 13 Sep 2024 13:29:49 +0200</pubDate>
       <guid>https://hirschdaniel.com/blog/apache-kafka-introduction/</guid>
@@ -25,7 +25,7 @@ I documented the whole process on YouTube. There, you can see me execute all the
 A Beginner&amp;rsquo;s Guide to Apache Kafka: Event Streaming Made Easy I’m Daniel Hirsch, a software engineer based in Germany, and in this post, I’ll share insights from my exploration of Apache Kafka, helping you understand its core concepts and how it solves common problems in modern software architectures.</description>
     </item>
     <item>
-      <title>How to: Decompile Java Crackme and Develop a Keygen</title>
+      <title>Reverse Engineering and Coding a Keygen for a Java Crackme</title>
       <link>https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/</link>
       <pubDate>Wed, 11 Sep 2024 12:13:47 +0200</pubDate>
       <guid>https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/</guid>
@@ -33,7 +33,7 @@ A Beginner&amp;rsquo;s Guide to Apache Kafka: Event Streaming Made Easy I’m Da
 A few years ago, I spent a few days working on reverse engineering and the associated tools such as Ghidra. I can also highly recommend the book Hacking: The Art of Exploitation which should immediately ignite a spark in anyone interested. For me, as someone inexperienced in C, even the introduction to the assembly language was tough going.</description>
     </item>
     <item>
-      <title>After learning about Github pages, I will never pay for hosting again</title>
+      <title>Hosting Static Content on GitHub Pages</title>
       <link>https://hirschdaniel.com/blog/github-pages-saves-money/</link>
       <pubDate>Sun, 08 Sep 2024 14:42:37 +0200</pubDate>
       <guid>https://hirschdaniel.com/blog/github-pages-saves-money/</guid>
@@ -58,7 +58,7 @@ If your project contains a language that is not supported by ctags, but is relat
 # Build your hugo project hugo # Create a new content file hugo new &amp;lt;path&amp;gt; # For example: hugo new posts/hugo-cheat-sheet.md # Run the hugo development server hugo server Remember to set draft = false for content to be displayed.</description>
     </item>
     <item>
-      <title>I decided Wordpress is for freaks and dumped it</title>
+      <title>Launching a Hugo Website</title>
       <link>https://hirschdaniel.com/blog/first/</link>
       <pubDate>Sun, 01 Sep 2024 10:48:07 +0200</pubDate>
       <guid>https://hirschdaniel.com/blog/first/</guid>
