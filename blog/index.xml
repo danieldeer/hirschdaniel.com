@@ -6,8 +6,16 @@
     <description>Recent content in Blog on HirschDaniel</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 14 Sep 2024 14:28:15 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2024 14:47:58 +0200</lastBuildDate>
     <atom:link href="https://hirschdaniel.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced REST and HTTP: Status Codes, Headers, and Best Practices for Scalable RESTful APIs</title>
+      <link>https://hirschdaniel.com/blog/advanced-rest-and-http-concepts/</link>
+      <pubDate>Tue, 17 Sep 2024 14:47:58 +0200</pubDate>
+      <guid>https://hirschdaniel.com/blog/advanced-rest-and-http-concepts/</guid>
+      <description>When it comes to building and consuming REST APIs, many developers stop at the basics: GET, POST, PUT, DELETE, and a few status codes like 200 or 404. But REST is much more nuanced than that. Understanding REST deeply means mastering the underlying HTTP protocol, knowing how to design APIs that scale, and ensuring security and performance are top-notch.
+1. Advanced HTTP: More than POST &amp;amp; GET Many developers think of REST APIs simply as CRUD (change, read, update, delete) operations accessed via HTTP.</description>
+    </item>
     <item>
       <title>Refactoring and Mavenizing a Java Bruteforcing Library</title>
       <link>https://hirschdaniel.com/blog/refactoring-and-mavenizing-java-bruteforcer-project/</link>
