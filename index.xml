@@ -2,33 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>HirschDaniel</title>
-    <link>http://localhost:1313/</link>
+    <link>https://hirschdaniel.com/</link>
     <description>Recent content on HirschDaniel</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 17 Sep 2024 14:47:58 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Sep 2024 21:42:22 +0200</lastBuildDate>
+    <atom:link href="https://hirschdaniel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developing a Bot to Automate Web Activity on a XenForo-Based Forum</title>
+      <link>https://hirschdaniel.com/blog/develop-a-social-media-bot/</link>
+      <pubDate>Sun, 22 Sep 2024 21:42:22 +0200</pubDate>
+      <guid>https://hirschdaniel.com/blog/develop-a-social-media-bot/</guid>
+      <description>As a software engineer, automation is a natural extension of problem-solving when dealing with repetitive tasks. And in general, if you ever give me any task that involves a hint of repetition, you can expect me to automate it. Automating something complex to save time is both pleasing and rewarding.
+Recently, I worked on a project to automate interactions with a XenForo-based forum, saving myself countless hours of manual work. While I won’t disclose the specifics of the forum, the project involved fetching posts, extracting URLs, and automating interactions such as &amp;ldquo;liking&amp;rdquo; posts via HTTP POST requests.</description>
+    </item>
     <item>
       <title>Advanced REST and HTTP: Status Codes, Headers, and Best Practices for Scalable RESTful APIs</title>
-      <link>http://localhost:1313/blog/advanced-rest-and-http-concepts/</link>
+      <link>https://hirschdaniel.com/blog/advanced-rest-and-http-concepts/</link>
       <pubDate>Tue, 17 Sep 2024 14:47:58 +0200</pubDate>
-      <guid>http://localhost:1313/blog/advanced-rest-and-http-concepts/</guid>
+      <guid>https://hirschdaniel.com/blog/advanced-rest-and-http-concepts/</guid>
       <description>When it comes to building and consuming REST APIs, many developers stop at the basics: GET, POST, PUT, DELETE, and a few status codes like 200 or 404. But REST is much more nuanced than that. Understanding REST deeply means mastering the underlying HTTP protocol, knowing how to design APIs that scale, and ensuring security and performance are top-notch.
 1. Advanced HTTP: More than POST &amp;amp; GET Many developers think of REST APIs simply as CRUD (change, read, update, delete) operations accessed via HTTP.</description>
     </item>
     <item>
       <title>Refactoring and Mavenizing a Java Bruteforcing Library</title>
-      <link>http://localhost:1313/blog/refactoring-and-mavenizing-java-bruteforcer-project/</link>
+      <link>https://hirschdaniel.com/blog/refactoring-and-mavenizing-java-bruteforcer-project/</link>
       <pubDate>Sat, 14 Sep 2024 14:28:15 +0200</pubDate>
-      <guid>http://localhost:1313/blog/refactoring-and-mavenizing-java-bruteforcer-project/</guid>
+      <guid>https://hirschdaniel.com/blog/refactoring-and-mavenizing-java-bruteforcer-project/</guid>
       <description>Today, I’m taking on a small yet significant project: cleaning up and improving one of my older repositories on GitHub. It’s a Java bruteforcer I coded about three years ago.
 I documented the whole process on YouTube. There, you can see me execute all the steps described below. Of course it can&amp;rsquo;t compete with popular bruteforcers such as hashcat, the password recovery tool that ships with Kali Linux. But it works well anyways.</description>
     </item>
     <item>
       <title>Imprint</title>
-      <link>http://localhost:1313/imprint/</link>
+      <link>https://hirschdaniel.com/imprint/</link>
       <pubDate>Fri, 13 Sep 2024 16:42:58 +0200</pubDate>
-      <guid>http://localhost:1313/imprint/</guid>
+      <guid>https://hirschdaniel.com/imprint/</guid>
       <description>Deutsch Impressum
 Daniel Hirsch
 Kiefernweg 17
@@ -42,48 +50,48 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
     </item>
     <item>
       <title>Resources</title>
-      <link>http://localhost:1313/resources/</link>
+      <link>https://hirschdaniel.com/resources/</link>
       <pubDate>Fri, 13 Sep 2024 15:51:54 +0200</pubDate>
-      <guid>http://localhost:1313/resources/</guid>
+      <guid>https://hirschdaniel.com/resources/</guid>
       <description>Book Recommendations Let&amp;rsquo;s forget the standard recommendations &amp;ldquo;Clean Code&amp;rdquo;, &amp;ldquo;Pragmatic Programmer&amp;rdquo; etc. Everybody knows them. Here&amp;rsquo;s a list of books I found truly enriching, and possibly underrated:
 Designing Data-Intensive Applications: You will understand practically every database after reading this book. You will understand why there are different types of databases, how they work with and store data, and which kinds of databases to pick in which situation. Practical vim: This book made vim click with me and saved me so much time!</description>
     </item>
     <item>
       <title>Apache Kafka Introduction: Concepts and Terminology</title>
-      <link>http://localhost:1313/blog/apache-kafka-introduction/</link>
+      <link>https://hirschdaniel.com/blog/apache-kafka-introduction/</link>
       <pubDate>Fri, 13 Sep 2024 13:29:49 +0200</pubDate>
-      <guid>http://localhost:1313/blog/apache-kafka-introduction/</guid>
+      <guid>https://hirschdaniel.com/blog/apache-kafka-introduction/</guid>
       <description>In today’s world of distributed systems, data moves fast, and applications need to handle huge volumes of data in real time. Whether you&amp;rsquo;re building microservices, integrating external systems, or managing streaming data, ensuring smooth communication between data producers and consumers is crucial. This is where Apache Kafka comes in—a powerful event streaming platform that enables scalable and decoupled data exchange.
 A Beginner&amp;rsquo;s Guide to Apache Kafka: Event Streaming Made Easy I’m Daniel Hirsch, a software engineer based in Germany, and in this post, I’ll share insights from my exploration of Apache Kafka, helping you understand its core concepts and how it solves common problems in modern software architectures.</description>
     </item>
     <item>
       <title>Reverse Engineering and Coding a Keygen for a Java Crackme</title>
-      <link>http://localhost:1313/blog/decompile-java-crackme-and-develop-keygen/</link>
+      <link>https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/</link>
       <pubDate>Wed, 11 Sep 2024 12:13:47 +0200</pubDate>
-      <guid>http://localhost:1313/blog/decompile-java-crackme-and-develop-keygen/</guid>
+      <guid>https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/</guid>
       <description>I recently downloaded a Java Crackme .jar and looked at what I, as a mortal Java developer, can do with it.
 A few years ago, I spent a few days working on reverse engineering and the associated tools such as Ghidra. I can also highly recommend the book Hacking: The Art of Exploitation which should immediately ignite a spark in anyone interested. For me, as someone inexperienced in C, even the introduction to the assembly language was tough going.</description>
     </item>
     <item>
       <title>Wie es geht: Java Crackme Dekompilieren und Keygen Programmieren</title>
-      <link>http://localhost:1313/blog/decompile-java-crackme-and-develop-keygen.de/</link>
+      <link>https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen.de/</link>
       <pubDate>Tue, 10 Sep 2024 11:54:47 +0200</pubDate>
-      <guid>http://localhost:1313/blog/decompile-java-crackme-and-develop-keygen.de/</guid>
+      <guid>https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen.de/</guid>
       <description>Ich habe mir mal eine Java Crackme .jar heruntergeladen und geschaut was ich als sterblicher Java Entwickler so damit anfangen kann.
 Vor einigen Jahren habe ich mich mal ein paar Tage lang mit Reverse Engineering und den dazugehörigen Tools wie Ghidra beschäftigt. Auch sehr empfehlen kann ich das Buch Hacking: The Art of Exploitation welches bei jedem Interessierten sofort einen Funken zünden sollte. Für mich als C Unerfahrenen war selbst die Einleitung zur Assembly-Sprache schon harte Kost.</description>
     </item>
     <item>
       <title>Hosting Static Content on GitHub Pages</title>
-      <link>http://localhost:1313/blog/github-pages-saves-money/</link>
+      <link>https://hirschdaniel.com/blog/github-pages-saves-money/</link>
       <pubDate>Sun, 08 Sep 2024 14:42:37 +0200</pubDate>
-      <guid>http://localhost:1313/blog/github-pages-saves-money/</guid>
+      <guid>https://hirschdaniel.com/blog/github-pages-saves-money/</guid>
       <description>Over the last 10 years, I published at least 20 different websites. Some of them went viral and reached tens of thousands of daily visitors. But most of them went under the radar. For small websites, I had a shared hosting plan. I paid 10$ for unlimited domains on a shared host. Performance was meh. But I had no complaints from the visitors I had. A couple of websites I moved to a dedicated cloud hosting provider, which provides me a powerful server to run wordpress on.</description>
     </item>
     <item>
       <title>Vim Ctags Cheat Sheet</title>
-      <link>http://localhost:1313/blog/vim-cheat-sheet/</link>
+      <link>https://hirschdaniel.com/blog/vim-cheat-sheet/</link>
       <pubDate>Sat, 07 Sep 2024 10:26:37 +0200</pubDate>
-      <guid>http://localhost:1313/blog/vim-cheat-sheet/</guid>
+      <guid>https://hirschdaniel.com/blog/vim-cheat-sheet/</guid>
       <description>There are dozens of good vim cheat sheets online. Why do another one? This one is a cheat sheet tailored to my workflow for generating ctags. Let&amp;rsquo;s have a look.
 Generate ctags like this (replace js with whatever language files you want to ignore, if any. I don&amp;rsquo;t code javascript, but my projects contain tons of js files, so I exclude them):
 ctags -R -f ~/.ctags --exclude=&#39;*.js&#39; &amp;lt;path-to-project&amp;gt;
@@ -91,25 +99,25 @@ If your project contains a language that is not supported by ctags, but is relat
     </item>
     <item>
       <title>Hugo Cheat Sheet</title>
-      <link>http://localhost:1313/blog/second/</link>
+      <link>https://hirschdaniel.com/blog/second/</link>
       <pubDate>Sat, 07 Sep 2024 10:19:39 +0200</pubDate>
-      <guid>http://localhost:1313/blog/second/</guid>
+      <guid>https://hirschdaniel.com/blog/second/</guid>
       <description>Here&amp;rsquo;s a list of useful hugo commands I regularly use.
 # Build your hugo project hugo # Create a new content file hugo new &amp;lt;path&amp;gt; # For example: hugo new posts/hugo-cheat-sheet.md # Run the hugo development server hugo server Remember to set draft = false for content to be displayed.</description>
     </item>
     <item>
       <title>Launching a Hugo Website</title>
-      <link>http://localhost:1313/blog/first/</link>
+      <link>https://hirschdaniel.com/blog/first/</link>
       <pubDate>Sun, 01 Sep 2024 10:48:07 +0200</pubDate>
-      <guid>http://localhost:1313/blog/first/</guid>
+      <guid>https://hirschdaniel.com/blog/first/</guid>
       <description>I&amp;rsquo;ve been publishing wordpress websites for well over 10 years now. Wordpress was working well for me once I was familiar and knew a set of plugins to use. I knew exactly which caching, security, image compression, host, etc. to install to get things running smoothly. Somehow, this still doesn&amp;rsquo;t feel simple enough. No way every website is built like this.
 Back in school, I learned that a website is just HTML (for content) and CSS (for styling).</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://hirschdaniel.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://hirschdaniel.com/about/</guid>
       <description>I&amp;rsquo;m Daniel Hirsch, a Software Engineer who enjoys solving technical problems and working on complex systems with a focus on getting things done while maintaining quality, maintainability, and robustness.
 References I am honored to be given the opportunity to work on many different projects, ranging from simple wordpress setups and content production to complex software development for aerospace.
 Every project allowed me to expand and contribute knowledge.</description>
