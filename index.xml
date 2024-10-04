@@ -125,9 +125,7 @@ Back in school, I learned that a website is just HTML (for content) and CSS (for
       <link>https://hirschdaniel.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hirschdaniel.com/about/</guid>
-      <description>I&amp;rsquo;m Daniel Hirsch, a Software Engineer who enjoys solving technical problems and working on complex systems with a focus on getting things done while maintaining quality, maintainability, and robustness.
-References I am honored to be given the opportunity to work on many different projects, ranging from simple wordpress setups and content production to complex software development for aerospace.
-Every project allowed me to expand and contribute knowledge.</description>
+      <description>I&amp;rsquo;ve worked with several companies and institutions. Here is a wall of references.</description>
     </item>
   </channel>
 </rss>
