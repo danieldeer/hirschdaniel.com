@@ -125,7 +125,8 @@ Back in school, I learned that a website is just HTML (for content) and CSS (for
       <link>https://hirschdaniel.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hirschdaniel.com/about/</guid>
-      <description>I&amp;rsquo;ve worked with several companies and institutions. Here is a wall of references.</description>
+      <description>I&amp;rsquo;ve worked with several companies and institutions. Here is a table of references.
+Recipient Completed Work European Space Agency (ESA) Maintenance and development of EGS-CC and EMS Portal &amp;mdash; &amp;mdash; &amp;mdash; &amp;mdash; &amp;mdash; </description>
     </item>
   </channel>
 </rss>
