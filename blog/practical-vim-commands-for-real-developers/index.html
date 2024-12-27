@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Practical Vim Commands for Real Developers | HirschDaniel</title>
 <meta name="keywords" content="">
 <meta name="description" content="If you&rsquo;re comfortable with basic Vim commands and want to take your skills to the next level, this guide will help you unlock some of the best tools Vim has to offer. Whether you&rsquo;re programming, editing files, or working on large projects, these commands will make your workflow lightning-fast. In this post, we&rsquo;ll cover six main categories of commands: file navigation, searching, grepping, editing, and autocomplete, all using vanilla Vim—no custom configuration required.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/blog/practical-vim-commands-for-real-developers/">
+<link rel="canonical" href="https://hirschdaniel.com/blog/practical-vim-commands-for-real-developers/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://hirschdaniel.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hirschdaniel.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hirschdaniel.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hirschdaniel.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hirschdaniel.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/practical-vim-commands-for-real-developers/">
+<link rel="alternate" hreflang="en" href="https://hirschdaniel.com/blog/practical-vim-commands-for-real-developers/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,6 +28,69 @@
 
     </style>
 </noscript>
+  
+
+<meta property="og:title" content="Practical Vim Commands for Real Developers" />
+<meta property="og:description" content="If you&rsquo;re comfortable with basic Vim commands and want to take your skills to the next level, this guide will help you unlock some of the best tools Vim has to offer. Whether you&rsquo;re programming, editing files, or working on large projects, these commands will make your workflow lightning-fast. In this post, we&rsquo;ll cover six main categories of commands: file navigation, searching, grepping, editing, and autocomplete, all using vanilla Vim—no custom configuration required." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hirschdaniel.com/blog/practical-vim-commands-for-real-developers/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-09-28T14:57:51+02:00" />
+<meta property="article:modified_time" content="2024-09-28T14:57:51+02:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Practical Vim Commands for Real Developers"/>
+<meta name="twitter:description" content="If you&rsquo;re comfortable with basic Vim commands and want to take your skills to the next level, this guide will help you unlock some of the best tools Vim has to offer. Whether you&rsquo;re programming, editing files, or working on large projects, these commands will make your workflow lightning-fast. In this post, we&rsquo;ll cover six main categories of commands: file navigation, searching, grepping, editing, and autocomplete, all using vanilla Vim—no custom configuration required."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://hirschdaniel.com/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Practical Vim Commands for Real Developers",
+      "item": "https://hirschdaniel.com/blog/practical-vim-commands-for-real-developers/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Practical Vim Commands for Real Developers",
+  "name": "Practical Vim Commands for Real Developers",
+  "description": "If you\u0026rsquo;re comfortable with basic Vim commands and want to take your skills to the next level, this guide will help you unlock some of the best tools Vim has to offer. Whether you\u0026rsquo;re programming, editing files, or working on large projects, these commands will make your workflow lightning-fast. In this post, we\u0026rsquo;ll cover six main categories of commands: file navigation, searching, grepping, editing, and autocomplete, all using vanilla Vim—no custom configuration required.",
+  "keywords": [
+    
+  ],
+  "articleBody": "If you’re comfortable with basic Vim commands and want to take your skills to the next level, this guide will help you unlock some of the best tools Vim has to offer. Whether you’re programming, editing files, or working on large projects, these commands will make your workflow lightning-fast. In this post, we’ll cover six main categories of commands: file navigation, searching, grepping, editing, and autocomplete, all using vanilla Vim—no custom configuration required.\nI also recommend checking out my YouTube Video on Practical Vim Commands.\nLet’s dive in!\n1. Navigating Between Files Vim offers powerful commands to switch between files, which can significantly enhance your workflow.\n:e (Open a File)\nTo open a new file in Vim, use :e. You can use the Tab key for auto-completion to find the file you need quickly.\n:e filename Press Tab to cycle through suggestions based on your current working directory (:pwd to check the current path).\n(Toggle Between Files)\nYou can quickly switch between the current file and the previous one using Control-6 (). This is handy when you want to flip back and forth between two files.\n:tabe (Open File in a New Tab)\nJust like browser tabs, Vim lets you open files in separate tabs using :tabe:\n:tabe filename Use gt to navigate to the next tab and gT to go to the previous tab. This makes managing multiple files even easier.\n2. Searching in Files Searching within a file is crucial for navigating large files.\n/ (Forward Search)\nUse / followed by the string you’re searching for. Press Enter, and Vim will take you to the first occurrence. Press n to move to the next occurrence and N (uppercase) to go back.\n/search_string ? (Backward Search)\nSearching in the opposite direction is done with ?:\n?search_string Just like /, pressing n will take you to the next occurrence, and N will reverse the direction.\n* (Search Word Under Cursor)\nTo save yourself from typing the search term, simply place the cursor on a word and press *. This will automatically search for that word across the file. n and N work the same way here for navigation.\n3. Grepping Across Multiple Files When working on larger projects, it’s often necessary to search across many files. Vim’s built-in grep tool, :vimgrep, is perfect for this.\n:vimgrep (Search Multiple Files)\nUse :vimgrep to search for a specific pattern across multiple files. You can specify the pattern and file type: :vimgrep /pattern/ **/*.java This command will search for the pattern in all Java files within the current directory and subdirectories. You can jump between the results using the commands :cnext (:cn) to move forward and :cprev (:cp) to move backward. Use :cfirst and :clast to navigate directly to the first or last result. 4. Editing Text Quickly Vim provides incredible commands for quickly editing text within delimiters or specific parts of a line.\nci (Change Inside Delimiters)\nThe ci command is a huge time-saver when editing text inside quotes, brackets, or other delimiters. For example:\nci\": Change everything inside the quotes. ci(: Change everything inside the parentheses. ci{: Change everything inside the curly braces. This command deletes the text inside the delimiter and puts you into insert mode so that you can immediately start typing your new content.\n5. Autocomplete Without Plugins Autocomplete helps speed up typing, especially when repeating long variable names or function calls.\n(Autocomplete Next)\nWhile typing, press Control-n () to get a list of suggestions based on words already present in your file. This is an excellent way to reuse variable names or method names without typing them again.\n(Autocomplete Previous)\nPress Control-p () to cycle backward through the autocomplete suggestions.\nThese commands work seamlessly in any file and don’t require any additional plugins or configurations.\n6. Centering Lines When navigating through a file, you might want the current line to appear in the center of the screen for better readability.\nzz (Center the Cursor Line)\nPressing zz will center the current line in the middle of the screen, making it easier to focus on the context. Putting It All Together Let’s say you’re working on a Java project, and you want to search for all instances of a method named main. Here’s how you might do it:\nUse :vimgrep /main/ **/*.java to find all occurrences of main in your project. Use :cnext (:cn) and :cprev (:cp) to jump between occurrences. Once you find the correct instance, use / to search for a specific string within the file, then * to jump between identical instances. Next, if you need to modify some text:\nPlace the cursor inside a string and press ci\" to change the text inside the quotes. If you need to autocomplete a variable name, start typing and use to see suggestions. Conclusion Mastering these commands will drastically improve your productivity in Vim. They allow you to navigate, edit, and manage files quickly, enabling a smooth and efficient editing experience. Even better, all these commands work out of the box with vanilla Vim—no configuration, no plugins—just the power of Vim itself.\nIf you’re new to these commands, practice them consistently, and soon they’ll become second nature. The more you use them, the faster and more efficient your workflow will become. Embrace the power of Vim, and happy coding!\n",
+  "wordCount" : "886",
+  "inLanguage": "en",
+  "datePublished": "2024-09-28T14:57:51+02:00",
+  "dateModified": "2024-09-28T14:57:51+02:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hirschdaniel.com/blog/practical-vim-commands-for-real-developers/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HirschDaniel",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hirschdaniel.com/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class=" dark" id="top">
@@ -41,7 +104,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="HirschDaniel (Alt + H)">HirschDaniel</a>
+            <a href="https://hirschdaniel.com/" accesskey="h" title="HirschDaniel (Alt + H)">HirschDaniel</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -67,7 +130,7 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/blog/" title="Blog">
+                <a href="https://hirschdaniel.com/blog/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
@@ -192,7 +255,7 @@ Pressing <code>zz</code> will center the current line in the middle of the scree
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="next" href="http://localhost:1313/blog/develop-a-social-media-bot/">
+  <a class="next" href="https://hirschdaniel.com/blog/develop-a-social-media-bot/">
     <span class="title">Next »</span>
     <br>
     <span>Developing a Bot to Automate Web Activity on a XenForo-Based Forum</span>
@@ -204,8 +267,8 @@ Pressing <code>zz</code> will center the current line in the middle of the scree
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">HirschDaniel</a></span> · 
-	<span><a href="http://localhost:1313/imprint">Imprint</a></span>
+        <span>&copy; 2024 <a href="https://hirschdaniel.com/">HirschDaniel</a></span> · 
+	<span><a href="https://hirschdaniel.com/imprint">Imprint</a></span>
 
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
