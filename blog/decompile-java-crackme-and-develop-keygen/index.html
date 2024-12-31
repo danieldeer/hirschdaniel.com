@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Reverse Engineering and Coding a Keygen for a Java Crackme | HirschDaniel</title>
 <meta name="keywords" content="">
 <meta name="description" content="I recently downloaded a Java Crackme .jar and looked at what I, as a mortal Java developer, can do with it.
 A few years ago, I spent a few days working on reverse engineering and the associated tools such as Ghidra. I can also highly recommend the book Hacking: The Art of Exploitation which should immediately ignite a spark in anyone interested. For me, as someone inexperienced in C, even the introduction to the assembly language was tough going.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/blog/decompile-java-crackme-and-develop-keygen/">
+<link rel="canonical" href="https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://hirschdaniel.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hirschdaniel.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hirschdaniel.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hirschdaniel.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hirschdaniel.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/decompile-java-crackme-and-develop-keygen/">
+<link rel="alternate" hreflang="en" href="https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/">
 <noscript>
     <style>
         #theme-toggle,
@@ -29,6 +29,71 @@ A few years ago, I spent a few days working on reverse engineering and the assoc
 
     </style>
 </noscript>
+  
+
+<meta property="og:title" content="Reverse Engineering and Coding a Keygen for a Java Crackme" />
+<meta property="og:description" content="I recently downloaded a Java Crackme .jar and looked at what I, as a mortal Java developer, can do with it.
+A few years ago, I spent a few days working on reverse engineering and the associated tools such as Ghidra. I can also highly recommend the book Hacking: The Art of Exploitation which should immediately ignite a spark in anyone interested. For me, as someone inexperienced in C, even the introduction to the assembly language was tough going." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-09-11T12:13:47+02:00" />
+<meta property="article:modified_time" content="2024-09-11T12:13:47+02:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Reverse Engineering and Coding a Keygen for a Java Crackme"/>
+<meta name="twitter:description" content="I recently downloaded a Java Crackme .jar and looked at what I, as a mortal Java developer, can do with it.
+A few years ago, I spent a few days working on reverse engineering and the associated tools such as Ghidra. I can also highly recommend the book Hacking: The Art of Exploitation which should immediately ignite a spark in anyone interested. For me, as someone inexperienced in C, even the introduction to the assembly language was tough going."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://hirschdaniel.com/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Reverse Engineering and Coding a Keygen for a Java Crackme",
+      "item": "https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Reverse Engineering and Coding a Keygen for a Java Crackme",
+  "name": "Reverse Engineering and Coding a Keygen for a Java Crackme",
+  "description": "I recently downloaded a Java Crackme .jar and looked at what I, as a mortal Java developer, can do with it.\nA few years ago, I spent a few days working on reverse engineering and the associated tools such as Ghidra. I can also highly recommend the book Hacking: The Art of Exploitation which should immediately ignite a spark in anyone interested. For me, as someone inexperienced in C, even the introduction to the assembly language was tough going.",
+  "keywords": [
+    
+  ],
+  "articleBody": "I recently downloaded a Java Crackme .jar and looked at what I, as a mortal Java developer, can do with it.\nA few years ago, I spent a few days working on reverse engineering and the associated tools such as Ghidra. I can also highly recommend the book Hacking: The Art of Exploitation which should immediately ignite a spark in anyone interested. For me, as someone inexperienced in C, even the introduction to the assembly language was tough going. But overall, it’s the book for anyone interested in really in-depth software problems.\nThis reminds me, I should make a book list, but I’ll do that later.\nYouTube companion video I recorded the whole learning and development process and put it on YouTube, although in German: Java Crackme Decompiling and Keygen Programming\nSo from now on you have the option of either looking at me pondering and potentially not being able to comprehend what I’m thinking about, or simply reading the potentially coherent following text on the project.\nFinding the right crackme I found a crackme here. Crackmes are rated on a difficulty scale from 1.0 to 6.0. I then just got myself this one. The difficulty is given as 1.0.\nFinding the beginning First I open the downloaded .jar. The window looks like this: Here you can enter a name and a serial number. If the entry is incorrect, a message box opens with the message “Invalid Key, try again”. It is practically impossible for me to find the correct key straight away. Theoretically, you could also program a brute forcer instead of thinking about the problem further. However, a result is not to be expected in the foreseeable future. Depending on the strength of the serial number to be found, entropy has already easily destroyed us.\nJava’s vulnerability Java .jar files are just containers for so-called .class files and some metadata. You can think of it like a .zip file. And if you unpack the .jar file with a ZIP tool, it behaves in exactly the same way.\nThe unzipped .class files can then be viewed. Apart from a few isolated plain text strings that refer to the imports and classes used, however, you rarely get a clue here.\nBut why do I call this a vulnerability when I can hardly read anything? In contrast to other programming languages such as C, Java is not compiled into machine code. This means that the instructions in the .class files are not understandable for the processor. The so-called Java bytecode is a representation of the program logic that is as low-level as possible, but still independent of the processor and its architecture.\nSo we no longer have plain text here, but we don’t have real machine code either. So, if you really get to grips with this Java bytecode and look at it long enough, you can generate executable Java classes from the bytecode. Only the variable and class names are lost, because the Java compiler javac optimizes them away for memory reasons.\nWe use the technology: Java decompiler A quick search for “Java decompiler” and we land on this promising Java decompiler website. Here I download the tool and run it locally. I load the Crackme .jar and the following picture emerges:\nAnd it becomes source code!\nIt’s already done. That’s it! Or was it?\nThe longer I look at the code, the more of a headache it gives me.\nHow to understand decompiled Java code? The decompiled source code is full of obscure variable names. The classes are called KClass, UClass, XClass. Variable names range from unknown to var to ac, leet, and xxx. I am not sure if the original source code already contained such names. I can imagine that the Crackme author wanted to make the program as incomprehensible as possible.\nAfter a few minutes of failing to understand the code, I resort to stronger means.\nI load the decompiled sources into my Eclipse The Java decompiler can save the decompiled classes. I then load the saved package into Eclipse as a project. Of course, any other IDE works in exactly the same way.\nIn Eclipse I execute the main method and voila (!), the small serial number window opens. The decompiled source code is now executable!\nThis means that the decompiler is most likely working correctly.\nHow to sift through unreadable code The same (for mortal developers) unreadable code is now available in Eclipse. This has a purpose, of course, because I can now refactor the variable names. If I find out that a variable is, for example, the input text field of the name, then I can call it that. I can also see exceptions in the log. And I can change the code a bit and see what happens. If you play around with the source code enough, it should make sense sooner or later. Right?\nYes, and that’s exactly what happened in practice. After about an hour of studying the source code and reading Javadocs, I noticed that the serial number is checked as follows.\nthe input of the Serial text field is decoded with the DES cipher with the secret key “13248657”. this intermediate result is decoded a second time with the secret key “13377331”. the result of this is converted into an integer array, and each individual integer entry is understood with a fixed offset of -42784. The resulting integers are interpreted as characters. if the name entered matches this string, the serial number is valid, otherwise not. Phew. Was that difficult to find out? Probably not compared to other crackmes. But it wasn’t that easy after all. At least not for the very first time.\nThe whole thing in reverse: writing a keygen Now we know that each serial number has to be decoded twice and then arbitrarily subtracted. In order to derive the appropriate serial number for each name, the whole operation would have to be reversed.\nI choose a name, then\nencode it with both keys in reverse order. add the offsets to each byte in the result and derive integers from them. The result is an integer array. This is the valid serial number. In principle, I write a new key generator program by copying the operations of the Crackme .jar in the correct order and inserting them into my new program.\nNow I let the keygen accept any name and that’s it! The key generator for any name is ready.\nI generate a key for my name “Daniel” and paste it into the Crackme window and: “Valid Key!” 🎉\nLimitations For a moment I thought I was the king of software developers. But it doesn’t quite work like that after all. The downloaded crackme .jar does not accept the generated key!\nOnly the Crackme that starts in Eclipse accepts the key. Now I ask myself why. The bytecode should be identical for both Java programs.\nBut that reminds me: I create the keygen in Eclipse. It is therefore built with the JDK (Java Development Kit) used in Eclipse. When I start the Crackme in Eclipse, both Keygen and Crackme use the same JDK and the same cryptographic libraries are used.\nHowever, I start the downloaded Crackme in Ubuntu (actually in WSL / Windows Subsystem for Linux). WSL uses its own OpenJDK.\nI don’t trust the two JDKs to implement cryptographic libraries identically. So if Keygen and Crackme run in different JDKs, it’s OK if the generated serial numbers don’t match.\nSummary Overall, I see the whole project as a success. Honestly, I didn’t think I’d ever be able to write a (halfway) working keygen. I have learned a lot and I hope I could take you with me as a reader!\nResources I have already linked the Crackme and the Java Decompiler in the post. Here are the two core methods of the decompiled Java source code, as well as my keygen.\nDecompiled Crackme: // From KClass: private void a() { try { int tlu = 16; String mom = this.unknown.e().getText(); if (mom.length() \u003e 15) { JOptionPane.showMessageDialog(this.unknown, \"Name is longer than 15 character\", \"Invalid Name\", 0); } else { String[] ab = this.unknown.d().getText().split(\" \"); byte[] ac = new byte[ab.length]; int leet = 32; short xxx = 16; for (int i = 0; i \u003c ab.length; i++) ac[i] = (byte)((byte)Integer.parseInt(ab[i]) - this.var * leet / tlu * xxx); Key ad = new SecretKeySpec(\"13248657\".getBytes(), \"DES\"); Cipher ae = Cipher.getInstance(\"DES\"); ae.init(2, ad); byte[] xu = ae.doFinal(ac); byte[] io = (new XClass(xu)).xmpio(); StringBuilder sb = new StringBuilder(); for (int j = 0; j \u003c io.length; j++) sb.append((char)io[j]); if (mom.equals(sb.toString())) { JOptionPane.showMessageDialog(this.unknown, \"Valid key\", \"Congratulations\", 1); } else { JOptionPane.showMessageDialog(this.unknown, \"Invalid Key, try again\", \":P\", 1); } } } catch (Exception e) { JOptionPane.showMessageDialog(this.unknown, \"Invalid Key, try again\", \":P\", 1); e.printStackTrace(); } } // From XClass: public byte[] xmpio() { byte[] io = (byte[])null; try { Key ad = new SecretKeySpec(\"13377331\".getBytes(), \"DES\"); Cipher ae = Cipher.getInstance(\"DES\"); ae.init(2, ad); io = ae.doFinal(this.arr); } catch (Exception exception) {} return io; } Developed Keygen: package eu.sknine.skcrackme1; import java.security.Key; import javax.crypto.Cipher; import javax.crypto.spec.SecretKeySpec; public class Keygen { public static void main(String[] args) throws Exception { String nameInput = args[0]; System.out.println(\"Input name: \" + nameInput); Key ad = new SecretKeySpec(\"13377331\".getBytes(), \"DES\"); Cipher ae = Cipher.getInstance(\"DES\"); ae.init(1, ad); byte[] io = ae.doFinal(nameInput.getBytes()); Key ad2 = new SecretKeySpec(\"13248657\".getBytes(), \"DES\"); Cipher ae2 = Cipher.getInstance(\"DES\"); ae.init(1, ad2); byte[] xu2 = ae.doFinal(io); int leet = 32; short xxx = 16; int var = 1337; int tlu = 16; int[] result = new int[xu2.length]; StringBuilder sb = new StringBuilder(); for (int i = 0; i \u003c xu2.length; i++) { result[i] = (char) ((char) xu2[i] + var * leet / tlu * xxx); sb.append(\"\" + result[i] + \" \"); } System.out.println(\"USE THIS VALID KEY: \" + sb); } } ",
+  "wordCount" : "1626",
+  "inLanguage": "en",
+  "datePublished": "2024-09-11T12:13:47+02:00",
+  "dateModified": "2024-09-11T12:13:47+02:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HirschDaniel",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hirschdaniel.com/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class=" dark" id="top">
@@ -42,7 +107,7 @@ A few years ago, I spent a few days working on reverse engineering and the assoc
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="HirschDaniel (Alt + H)">HirschDaniel</a>
+            <a href="https://hirschdaniel.com/" accesskey="h" title="HirschDaniel (Alt + H)">HirschDaniel</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -68,7 +133,7 @@ A few years ago, I spent a few days working on reverse engineering and the assoc
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/blog/" title="Blog">
+                <a href="https://hirschdaniel.com/blog/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
@@ -250,12 +315,12 @@ If you play around with the source code enough, it should make sense sooner or l
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/blog/apache-kafka-introduction/">
+  <a class="prev" href="https://hirschdaniel.com/blog/apache-kafka-introduction/">
     <span class="title">« Prev</span>
     <br>
     <span>Apache Kafka Introduction: Concepts and Terminology</span>
   </a>
-  <a class="next" href="http://localhost:1313/blog/decompile-java-crackme-and-develop-keygen.de/">
+  <a class="next" href="https://hirschdaniel.com/blog/decompile-java-crackme-and-develop-keygen.de/">
     <span class="title">Next »</span>
     <br>
     <span>Wie es geht: Java Crackme Dekompilieren und Keygen Programmieren</span>
@@ -267,8 +332,8 @@ If you play around with the source code enough, it should make sense sooner or l
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">HirschDaniel</a></span> · 
-	<span><a href="http://localhost:1313/imprint">Imprint</a></span>
+        <span>&copy; 2024 <a href="https://hirschdaniel.com/">HirschDaniel</a></span> · 
+	<span><a href="https://hirschdaniel.com/imprint">Imprint</a></span>
 
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
