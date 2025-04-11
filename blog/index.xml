@@ -6,8 +6,18 @@
     <description>Recent content in Blog on HirschDaniel</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 28 Sep 2024 14:57:51 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 11 Apr 2025 11:17:58 +0200</lastBuildDate>
     <atom:link href="https://hirschdaniel.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean Thinking through Notetaking</title>
+      <link>https://hirschdaniel.com/blog/clean-thinking-and-note-taking/</link>
+      <pubDate>Fri, 11 Apr 2025 11:17:58 +0200</pubDate>
+      <guid>https://hirschdaniel.com/blog/clean-thinking-and-note-taking/</guid>
+      <description>Take notes, so you don&amp;rsquo;t have to remember everything.
+You can get pocket notebooks for cheap. They are like an extension for your brain.
+And I don&amp;rsquo;t mean to note just work stuff. Note genuine thoughts and ideas.
+Digital notes to speed you up For work-related note taking, use whatever text editor you wish. Obsidian is quite nice. But any editor will do. Use vim if you&amp;rsquo;re a nerd. Save your notes in more than one place to protect them from being lost.</description>
+    </item>
     <item>
       <title>Practical Vim Commands for Real Developers</title>
       <link>https://hirschdaniel.com/blog/practical-vim-commands-for-real-developers/</link>
