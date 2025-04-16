@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Building VanityLib with Supabase | HirschDaniel</title>
+<meta name="keywords" content="">
+<meta name="description" content="Building VanityLib with Supabase Today I built a small project using Supabase as a backend. The project is called VanityLib, and it’s a public directory of rare Bitcoin addresses — each one pre-generated with a readable prefix and paired with a private key. The user can browse them in a table and pick one. Once selected, the address should be removed from the database.
+I started by signing up for Supabase and creating a new project.">
+<meta name="author" content="">
+<link rel="canonical" href="https://hirschdaniel.com/blog/supabase/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5b71b2aca370fdb25752b71b1c60d83f6a65c8509d2649f3f6e2c16d0c255eb9.css" integrity="sha256-W3GyrKNw/bJXUrcbHGDYP2plyFCdJknz9uLBbQwlXrk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://hirschdaniel.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hirschdaniel.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hirschdaniel.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hirschdaniel.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hirschdaniel.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://hirschdaniel.com/blog/supabase/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+  
+
+<meta property="og:title" content="Building VanityLib with Supabase" />
+<meta property="og:description" content="Building VanityLib with Supabase Today I built a small project using Supabase as a backend. The project is called VanityLib, and it’s a public directory of rare Bitcoin addresses — each one pre-generated with a readable prefix and paired with a private key. The user can browse them in a table and pick one. Once selected, the address should be removed from the database.
+I started by signing up for Supabase and creating a new project." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hirschdaniel.com/blog/supabase/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-04-16T20:39:58+02:00" />
+<meta property="article:modified_time" content="2025-04-16T20:39:58+02:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Building VanityLib with Supabase"/>
+<meta name="twitter:description" content="Building VanityLib with Supabase Today I built a small project using Supabase as a backend. The project is called VanityLib, and it’s a public directory of rare Bitcoin addresses — each one pre-generated with a readable prefix and paired with a private key. The user can browse them in a table and pick one. Once selected, the address should be removed from the database.
+I started by signing up for Supabase and creating a new project."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://hirschdaniel.com/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Building VanityLib with Supabase",
+      "item": "https://hirschdaniel.com/blog/supabase/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Building VanityLib with Supabase",
+  "name": "Building VanityLib with Supabase",
+  "description": "Building VanityLib with Supabase Today I built a small project using Supabase as a backend. The project is called VanityLib, and it’s a public directory of rare Bitcoin addresses — each one pre-generated with a readable prefix and paired with a private key. The user can browse them in a table and pick one. Once selected, the address should be removed from the database.\nI started by signing up for Supabase and creating a new project.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Building VanityLib with Supabase Today I built a small project using Supabase as a backend. The project is called VanityLib, and it’s a public directory of rare Bitcoin addresses — each one pre-generated with a readable prefix and paired with a private key. The user can browse them in a table and pick one. Once selected, the address should be removed from the database.\nI started by signing up for Supabase and creating a new project. Then I created a PostgreSQL table named addresses with the following schema:\nCREATE TABLE addresses ( id bigint generated by default as identity primary key, public_key text not null, private_key text not null, pattern text ); I imported the data using a .csv file containing rows like:\nBTC,1Actor,1ActorRiBSCVn5yAFCB9mWf5eUb9TtirJh,5JJ2WpyHevdyqKzYapDjcDmZx7XDcgaSNFqUn8g9UbRdU2fxXVN Only public_key, private_key, and pattern were relevant. I uploaded the data via the Supabase UI.\nOn the frontend, I used plain HTML, CSS, and JavaScript. Supabase provides an ESM-compatible client via CDN:\nimport { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'; const supabase = createClient(SUPABASE_URL, ANON_KEY); From there, I queried the addresses table using .select() and rendered the results in a table. Rarity is derived by inspecting the length of the pattern column. I mapped it to a set of emoji symbols to represent the quality of the vanity prefix:\nconst rarityLevels = ['🪵', '🥄', '🔩', '🪙', '💎', '🧊', '🌌']; const rarity = rarityLevels[Math.min(Math.max(patternLength - 3, 0), rarityLevels.length - 1)]; Private keys are hidden by default. Clicking the “Click to show” cell triggers a secondary Supabase query which fetches the corresponding private key via:\nconst { data } = await supabase .from('addresses') .select('private_key') .eq('public_key', publicKey) .single(); I also added pagination using .range(page * pageSize, (page + 1) * pageSize - 1) and a couple of navigation buttons that let users load the next or previous page.\nNext steps are to:\nRemove a row from the table when the private key is revealed (via .delete()), Possibly replace the static site with a small Svelte or Astro frontend for better structure, Add serverless Supabase functions for rate limiting or ownership logging. This was the first time I used Supabase seriously, and the experience was solid. The setup was fast, and the client API is straightforward. No backend code needed, just client-side logic and some access control rules in the Supabase UI.\nI decided to not publish the project since it can be misused.\n",
+  "wordCount" : "392",
+  "inLanguage": "en",
+  "datePublished": "2025-04-16T20:39:58+02:00",
+  "dateModified": "2025-04-16T20:39:58+02:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hirschdaniel.com/blog/supabase/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HirschDaniel",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hirschdaniel.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hirschdaniel.com/" accesskey="h" title="HirschDaniel (Alt + H)">HirschDaniel</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://hirschdaniel.com/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Building VanityLib with Supabase
+    </h1>
+    <div class="post-meta"><span title='2025-04-16 20:39:58 +0200 CEST'>April 16, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="building-vanitylib-with-supabase">Building VanityLib with Supabase<a hidden class="anchor" aria-hidden="true" href="#building-vanitylib-with-supabase">#</a></h2>
+<p>Today I built a small project using Supabase as a backend. The project is called <strong>VanityLib</strong>, and it’s a public directory of rare Bitcoin addresses — each one pre-generated with a readable prefix and paired with a private key. The user can browse them in a table and pick one. Once selected, the address should be removed from the database.</p>
+<p>I started by signing up for Supabase and creating a new project. Then I created a PostgreSQL table named <code>addresses</code> with the following schema:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> addresses (
+</span></span><span style="display:flex;"><span>  id bigint <span style="color:#66d9ef">generated</span> <span style="color:#66d9ef">by</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">identity</span> <span style="color:#66d9ef">primary</span> <span style="color:#66d9ef">key</span>,
+</span></span><span style="display:flex;"><span>  public_key text <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>  private_key text <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>  pattern text
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>I imported the data using a <code>.csv</code> file containing rows like:</p>
+<pre tabindex="0"><code>BTC,1Actor,1ActorRiBSCVn5yAFCB9mWf5eUb9TtirJh,5JJ2WpyHevdyqKzYapDjcDmZx7XDcgaSNFqUn8g9UbRdU2fxXVN
+</code></pre><p>Only <code>public_key</code>, <code>private_key</code>, and <code>pattern</code> were relevant. I uploaded the data via the Supabase UI.</p>
+<p>On the frontend, I used plain HTML, CSS, and JavaScript. Supabase provides an ESM-compatible client via CDN:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createClient</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">supabase</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createClient</span>(<span style="color:#a6e22e">SUPABASE_URL</span>, <span style="color:#a6e22e">ANON_KEY</span>);
+</span></span></code></pre></div><p>From there, I queried the <code>addresses</code> table using <code>.select()</code> and rendered the results in a table. Rarity is derived by inspecting the length of the <code>pattern</code> column. I mapped it to a set of emoji symbols to represent the quality of the vanity prefix:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">rarityLevels</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;🪵&#39;</span>, <span style="color:#e6db74">&#39;🥄&#39;</span>, <span style="color:#e6db74">&#39;🔩&#39;</span>, <span style="color:#e6db74">&#39;🪙&#39;</span>, <span style="color:#e6db74">&#39;💎&#39;</span>, <span style="color:#e6db74">&#39;🧊&#39;</span>, <span style="color:#e6db74">&#39;🌌&#39;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">rarity</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">rarityLevels</span>[Math.<span style="color:#a6e22e">min</span>(Math.<span style="color:#a6e22e">max</span>(<span style="color:#a6e22e">patternLength</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">0</span>), <span style="color:#a6e22e">rarityLevels</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)];
+</span></span></code></pre></div><p>Private keys are hidden by default. Clicking the “Click to show” cell triggers a secondary Supabase query which fetches the corresponding private key via:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">data</span> } <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">supabase</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">from</span>(<span style="color:#e6db74">&#39;addresses&#39;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">select</span>(<span style="color:#e6db74">&#39;private_key&#39;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">eq</span>(<span style="color:#e6db74">&#39;public_key&#39;</span>, <span style="color:#a6e22e">publicKey</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">single</span>();
+</span></span></code></pre></div><p>I also added pagination using <code>.range(page * pageSize, (page + 1) * pageSize - 1)</code> and a couple of navigation buttons that let users load the next or previous page.</p>
+<p>Next steps are to:</p>
+<ul>
+<li>Remove a row from the table when the private key is revealed (via <code>.delete()</code>),</li>
+<li>Possibly replace the static site with a small Svelte or Astro frontend for better structure,</li>
+<li>Add serverless Supabase functions for rate limiting or ownership logging.</li>
+</ul>
+<p>This was the first time I used Supabase seriously, and the experience was solid. The setup was fast, and the client API is straightforward. No backend code needed, just client-side logic and some access control rules in the Supabase UI.</p>
+<p>I decided to not publish the project since it can be misused.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://hirschdaniel.com/blog/clean-thinking-and-note-taking/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Clear Thinking through Notetaking</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://hirschdaniel.com/">HirschDaniel</a></span> · 
+	<span><a href="https://hirschdaniel.com/imprint">Imprint</a></span>
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

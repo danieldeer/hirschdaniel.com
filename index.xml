@@ -6,8 +6,16 @@
     <description>Recent content on HirschDaniel</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 11 Apr 2025 11:17:58 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 16 Apr 2025 20:39:58 +0200</lastBuildDate>
     <atom:link href="https://hirschdaniel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building VanityLib with Supabase</title>
+      <link>https://hirschdaniel.com/blog/supabase/</link>
+      <pubDate>Wed, 16 Apr 2025 20:39:58 +0200</pubDate>
+      <guid>https://hirschdaniel.com/blog/supabase/</guid>
+      <description>Building VanityLib with Supabase Today I built a small project using Supabase as a backend. The project is called VanityLib, and it’s a public directory of rare Bitcoin addresses — each one pre-generated with a readable prefix and paired with a private key. The user can browse them in a table and pick one. Once selected, the address should be removed from the database.
+I started by signing up for Supabase and creating a new project.</description>
+    </item>
     <item>
       <title>Clear Thinking through Notetaking</title>
       <link>https://hirschdaniel.com/blog/clean-thinking-and-note-taking/</link>
